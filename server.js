@@ -1,6 +1,6 @@
 const mysql = require('mysql2');
 const express = require('express');
-const PORT = process.env.PORT || 3306;
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 
@@ -24,6 +24,6 @@ app.use((req, res) => {
     res.status(404).end();
 })
 
-app.listen(3306, () => {
+app.listen(3001, () => {
     console.log(`Server running on ${PORT}`);
 });
